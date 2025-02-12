@@ -1,11 +1,11 @@
 #include<iostream>
 using namespace std;
-double ketqua(int a){
+double ketqua(double a){
   if(a==0) return 0;
   return (a/(a+1))+ketqua(a-1);
 }
 int main(){
   int n;
   cin>>n;
-  cout<<ketqua(2*n+1)>>endl;
+  cout<<ketqua(2*n+1)<<endl;
 }
